@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Next Level - jogos, plataformas, notícias e reviews">
+<title>Reviews - Next Level</title>
+<link rel="icon" type="image/jpeg" href="img/logo.jpg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="container header-top">
+<a class="marca" href="index.html">
+<img class="logo" src="img/logo.jpg" alt="Logo Next Level">
+<span class="logo-nome">Next Level</span>
+</a>
+<form class="busca-header" onsubmit="pesquisarHeader(event)">
+<input id="busca-header" type="search" placeholder="Pesquisar jogos..." aria-label="Pesquisar jogos">
+<button type="submit">Pesquisar</button>
+</form>
+</div>
+<div class="container"><nav>
+<a href="index.html">Início</a>
+<a href="jogos.html">Jogos</a>
+<a href="noticias.html">Notícias</a>
+<a href="reviews.html">Reviews</a>
+<a href="pc.html">PC</a>
+<a href="playstation.html">PlayStation</a>
+<a href="xbox.html">Xbox</a>
+<a href="nintendo.html">Nintendo</a>
+<a href="ranking.html">Ranking</a>
+<a href="contato.html">Contato</a>
+</nav></div>
+</header>
+<main><div class="container">
+<div class="pagina-topo"><div><span class="mini-titulo">COMUNIDADE</span><h1>Reviews dos usuários</h1><p>Deixe sua opinião sobre um jogo. As avaliações ficam salvas neste navegador.</p></div></div>
+<div class="review-layout">
+<section class="form-box"><h2>Escreva sua review</h2><form id="review-form">
+<label for="nome-review">Seu nome</label><input id="nome-review" type="text" maxlength="30" placeholder="Ex.: Vitor" required>
+<label for="jogo-review">Jogo</label><select id="jogo-review" required><option value="">Escolha um jogo</option><option>Minecraft</option><option>Cyberpunk 2077</option><option>Grand Theft Auto V</option><option>The Witcher 3</option><option>Valorant</option><option>Terraria</option><option>God of War Ragnarök</option><option>Horizon Forbidden West</option><option>Marvel’s Spider-Man 2</option><option>The Last of Us Part II</option><option>Gran Turismo 7</option><option>Ghost of Tsushima</option><option>Forza Horizon 5</option><option>Halo Infinite</option><option>Minecraft</option><option>Sea of Thieves</option><option>Gears 5</option><option>Starfield</option><option>Super Mario Odyssey</option><option>The Legend of Zelda: Tears of the Kingdom</option><option>Pokémon Scarlet</option><option>Mario Kart 8 Deluxe</option><option>Animal Crossing: New Horizons</option><option>Super Smash Bros. Ultimate</option></select>
+<label for="nota-review">Nota</label><select id="nota-review" required><option value="">Escolha de 1 a 10</option><option value="1">1/10</option><option value="2">2/10</option><option value="3">3/10</option><option value="4">4/10</option><option value="5">5/10</option><option value="6">6/10</option><option value="7">7/10</option><option value="8">8/10</option><option value="9">9/10</option><option value="10">10/10</option></select>
+<label for="texto-review">Review</label><textarea id="texto-review" maxlength="500" placeholder="O que você achou do jogo?" required></textarea>
+<button type="submit">Publicar review</button></form></section>
+<section><div class="reviews-cabecalho"><h2>Reviews publicadas</h2><button class="botao-secundario" type="button" onclick="limparReviews()">Limpar minhas reviews</button></div><div id="lista-reviews"></div></section>
+</div>
+</div></main>
+<footer>
+    <div class="container footer-grid">
+        <div class="footer-sobre">
+            <a class="footer-marca" href="index.html">Next Level <span>🎮</span></a>
+            <p>Um espaço para descobrir jogos, trocar opiniões e encontrar sua próxima aventura.</p>
+        </div>
+        <div class="footer-links">
+            <strong>Explore o site</strong>
+            <a href="jogos.html">Todos os jogos</a>
+            <a href="reviews.html">Reviews da comunidade</a>
+            <a href="ranking.html">Ranking</a>
+        </div>
+        <div class="footer-final">
+            <strong>Continue jogando.</strong>
+            <p>Qual vai ser sua próxima fase?</p>
+        </div>
+    </div>
+    <div class="container footer-bottom">© 2026 Next Level · Feito para quem gosta de jogar.</div>
+</footer>
+<script src="js/script.js"></script>
+
+</body>
+</html>
