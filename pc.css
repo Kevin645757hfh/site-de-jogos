@@ -1,0 +1,28 @@
+/* Cores próprias da página Pc */
+body.plataforma-pc {
+    --cor-principal: #a78bfa;
+    --cor-secundaria: #22d3ee;
+    --cor-header: #171329;
+    --cor-card: #1b1830;
+    --cor-borda: #42365f;
+}
+
+body.plataforma-pc header {
+    background: linear-gradient(110deg, var(--cor-header), var(--cor-card));
+}
+
+body.plataforma-pc .hero, body.plataforma-pc .pagina-topo {
+    border-color: var(--cor-principal);
+}
+
+body.plataforma-pc .tag, body.plataforma-pc .busca-header button, body.plataforma-pc button {
+    --cor-principal: var(--cor-principal);
+}
+
+body.plataforma-pc .card:hover, body.plataforma-pc nav a:hover {
+    border-color: var(--cor-principal);
+    color: var(--cor-principal);
+}
+
+/* Botao de pesquisa acompanha a identidade da plataforma. */
+body.plataforma-pc .busca-header button { background: var(--cor-principal); color: #08101b; }

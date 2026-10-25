@@ -1,0 +1,28 @@
+/* Cores próprias da página Xbox */
+body.plataforma-xbox {
+    --cor-principal: #6fda44;
+    --cor-secundaria: #b7f58d;
+    --cor-header: #102315;
+    --cor-card: #142c1a;
+    --cor-borda: #2c5b37;
+}
+
+body.plataforma-xbox header {
+    background: linear-gradient(110deg, var(--cor-header), var(--cor-card));
+}
+
+body.plataforma-xbox .hero, body.plataforma-xbox .pagina-topo {
+    border-color: var(--cor-principal);
+}
+
+body.plataforma-xbox .tag, body.plataforma-xbox .busca-header button, body.plataforma-xbox button {
+    --cor-principal: var(--cor-principal);
+}
+
+body.plataforma-xbox .card:hover, body.plataforma-xbox nav a:hover {
+    border-color: var(--cor-principal);
+    color: var(--cor-principal);
+}
+
+/* Botao de pesquisa acompanha a identidade da plataforma. */
+body.plataforma-xbox .busca-header button { background: var(--cor-principal); color: #08101b; }

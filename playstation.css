@@ -1,0 +1,28 @@
+/* Cores próprias da página Playstation */
+body.plataforma-playstation {
+    --cor-principal: #4f8cff;
+    --cor-secundaria: #8db8ff;
+    --cor-header: #101c35;
+    --cor-card: #142441;
+    --cor-borda: #294a7b;
+}
+
+body.plataforma-playstation header {
+    background: linear-gradient(110deg, var(--cor-header), var(--cor-card));
+}
+
+body.plataforma-playstation .hero, body.plataforma-playstation .pagina-topo {
+    border-color: var(--cor-principal);
+}
+
+body.plataforma-playstation .tag, body.plataforma-playstation .busca-header button, body.plataforma-playstation button {
+    --cor-principal: var(--cor-principal);
+}
+
+body.plataforma-playstation .card:hover, body.plataforma-playstation nav a:hover {
+    border-color: var(--cor-principal);
+    color: var(--cor-principal);
+}
+
+/* Botao de pesquisa acompanha a identidade da plataforma. */
+body.plataforma-playstation .busca-header button { background: var(--cor-principal); color: #08101b; }

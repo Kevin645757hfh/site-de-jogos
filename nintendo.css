@@ -1,0 +1,28 @@
+/* Cores próprias da página Nintendo */
+body.plataforma-nintendo {
+    --cor-principal: #ff4b55;
+    --cor-secundaria: #ffd45a;
+    --cor-header: #32151a;
+    --cor-card: #301c22;
+    --cor-borda: #71343a;
+}
+
+body.plataforma-nintendo header {
+    background: linear-gradient(110deg, var(--cor-header), var(--cor-card));
+}
+
+body.plataforma-nintendo .hero, body.plataforma-nintendo .pagina-topo {
+    border-color: var(--cor-principal);
+}
+
+body.plataforma-nintendo .tag, body.plataforma-nintendo .busca-header button, body.plataforma-nintendo button {
+    --cor-principal: var(--cor-principal);
+}
+
+body.plataforma-nintendo .card:hover, body.plataforma-nintendo nav a:hover {
+    border-color: var(--cor-principal);
+    color: var(--cor-principal);
+}
+
+/* Botao de pesquisa acompanha a identidade da plataforma. */
+body.plataforma-nintendo .busca-header button { background: var(--cor-principal); color: #08101b; }
